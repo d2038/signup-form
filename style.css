@@ -3,15 +3,44 @@ body {
   align-items: stretch;
 }
 
-.left-side>img {
-  display: block;
-  width: 100%;  
-}
-
 .left-side {
   flex: 1;
+  position: relative;  
+}
+
+.left-side>img {
+display: block;
+  width: 100%;  
 }
 
 .right-side {
   flex: 2;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin-top: 30%;
+  width: 100%;
+  padding: 3% 0;
+  background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.logo-container>img {  
+  display: block;
+  width: 15%;
+}
+
+@font-face {
+  font-family: norse;
+  src: url(/resources/Norse-Bold.otf);
+}
+
+.logo-title {
+  font-family: norse, sans-serif;
+  font-size: 5vw;
+  color: white;  
 }
