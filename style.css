@@ -1,8 +1,17 @@
 body {
-  display: flex;  
+  display: flex;
+  align-items: stretch;
 }
 
-.left>img {
+.left-side>img {
   display: block;
-  width: 33vw;
+  width: 100%;  
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 2;
 }
