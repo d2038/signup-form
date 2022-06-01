@@ -1,0 +1,8 @@
+body {
+  display: flex;  
+}
+
+.left>img {
+  display: block;
+  width: 33vw;
+}
