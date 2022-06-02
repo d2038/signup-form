@@ -15,6 +15,7 @@ body {
 
 .right-side {
   flex: 2;
+  background-color: #E5E7EB;
 }
 
 .logo-container {
@@ -59,11 +60,35 @@ body {
 }
 
 .intro-container {
-  background-color: #E5E7EB;
   padding: 6vw 8vw 2vw 3vw;
 }
 
 .intro-text {
   font-weight: bold;
   font-size: 1.7vw;
+}
+
+.account-container {
+  padding: 2vw 8vw 2vw 3vw;
+}
+
+.form-container {
+  background-color: white;
+  height: 100px;
+}
+
+.submit-btn {
+  background-color: #596D48;
+  color: white;
+  padding: 1vw 3vw;
+  border-radius: 0.8vw;
+  border-style: none;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.login-text {
+  text-decoration-line: none;
+  color: #596D48;
+  font-weight: bold;
 }
