@@ -4,7 +4,7 @@ body {
 }
 
 .left-side {
-  flex: 1;
+  flex: 1.5;
   position: relative;
 }
 
@@ -56,4 +56,14 @@ body {
 .credits a {
   color: white;
   text-decoration-color: white;
+}
+
+.intro-container {
+  background-color: #E5E7EB;
+  padding: 6vw 8vw 2vw 3vw;
+}
+
+.intro-text {
+  font-weight: bold;
+  font-size: 1.7vw;
 }
