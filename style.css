@@ -73,8 +73,7 @@ body {
 }
 
 .form-container {
-  background-color: white;
-  height: 100px;
+  background-color: white;  
 }
 
 .submit-btn {
@@ -91,4 +90,23 @@ body {
   text-decoration-line: none;
   color: #596D48;
   font-weight: bold;
+}
+
+label {
+  font-size: 1vw;
+}
+
+form>div {
+  display: flex;
+  gap: 5vw;
+  margin-bottom: 2vw;
+}
+
+form>div>div {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-container {
+  padding: 0.01vw 0 3vw 3vw;
 }

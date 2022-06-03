@@ -17,20 +17,62 @@
       <img src="/resources/odin-lined.png">
       <div class="logo-title">ODIN</div>
     </div>
-    <div class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+    <div class="credits">Photo by <a
+        href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+        West</a> on <a
+        href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
   </div>
   <div class="right-side">
     <div class="intro-container">
-      <p class="intro-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p class="intro-text">This is not a real online service! You know you need something like this in your life to
+        help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
       <p class="intro-text">You <em>know</em> you want to.</p>
     </div>
 
     <div class="form-container">
-      
+      <h2 class="form-title">Let's do this!</h1>
+        <form action="#" id="signup-form" method="post">
+          <div class="fullname">
+            <div>
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName">
+            </div>
+
+            <div>
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName">
+            </div>
+          </div>
+          
+          <div class="contact-info">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" id="email">
+            </div>
+            
+            <div>
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="text" id="phoneNumber">
+            </div>
+          </div>
+          
+          <div class="password-info">
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password">
+            </div>
+            
+            <div>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input type="password" id="confirmPassword">
+            </div>
+          </div>
+        </form>
     </div>
 
     <div class="account-container">
-      <button type="submit" class="submit-btn">Create Account</button>
+      <button type="submit" class="submit-btn" form="signup-form">Create Account</button>
       <p class="account-text">Already have an account? <a href="#" class="login-text">Log in</a></p>
     </div>
   </div>
