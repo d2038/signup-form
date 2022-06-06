@@ -135,7 +135,7 @@ input:focus {
 .error>div:first-child:after {
   content: "* Passwords do not match";
   color: red;
-  font-size: max(var(--min-font),1.3vw);;  
+  font-size: max(9px,1.3vw);;  
 }
 
 .form-title {
