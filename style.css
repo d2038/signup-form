@@ -38,7 +38,7 @@ body {
 
 @font-face {
   font-family: norse;
-  src: url(/resources/Norse-Bold.otf);
+  src: url(./assets/Norse-Bold.otf);
 }
 
 .logo-title {
