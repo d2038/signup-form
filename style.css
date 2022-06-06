@@ -1,6 +1,6 @@
 body {
   display: flex;
-  align-items: stretch;
+  --min-font: 12px;
 }
 
 .left-side {
@@ -8,9 +8,10 @@ body {
   position: relative;
 }
 
-.left-side>img {
+.background {
   display: block;
-  width: 100%;
+  width: 100%; 
+  height: 100%;
 }
 
 .right-side {
@@ -29,9 +30,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.logo-container>img {
+.logo-image {
   display: block;
-  width: 15%;
+  width: 6vw;
+  min-width: 40px;
 }
 
 @font-face {
@@ -41,7 +43,7 @@ body {
 
 .logo-title {
   font-family: norse, sans-serif;
-  font-size: 5vw;
+  font-size: max(10px,5vw);
   color: white;
 }
 
@@ -51,7 +53,7 @@ body {
   color: white;
   position: absolute;
   bottom: 0.5vw;
-  font-size: 1vw;
+  font-size: max(var(--min-font),1vw);
 }
 
 .credits a {
@@ -65,7 +67,7 @@ body {
 
 .intro-text {
   font-weight: bold;
-  font-size: 1.7vw;
+  font-size: max(var(--min-font),1.7vw);
 }
 
 .account-container {
@@ -83,7 +85,7 @@ body {
   border-radius: 0.8vw;
   border-style: none;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: max(var(--min-font),1.5vw);
 }
 
 .login-text {
@@ -93,7 +95,9 @@ body {
 }
 
 label {
-  font-size: 1vw;
+  font-size: max(10px, 1.4vw);
+  font-weight: bold;
+  margin-bottom: 0.3vw;
 }
 
 form>div {
@@ -109,4 +113,35 @@ form>div>div {
 
 .form-container {
   padding: 0.01vw 0 3vw 3vw;
+}
+
+input {
+  width: 18vw;
+  height: 1.6vw;
+  border: 0.15vw solid #E5E7EB;
+  border-radius: 0.4vw;
+  outline: none;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 3px 3px 2px #b0b2b8;
+}
+
+.error input {
+  border-color: red;
+}
+
+.error>div:first-child:after {
+  content: "* Passwords do not match";
+  color: red;
+  font-size: max(var(--min-font),1.3vw);;  
+}
+
+.form-title {
+  font-size: max(var(--min-font),2vw);
+}
+
+.account-text {
+  font-size: max(var(--min-font),1.4vw);
 }

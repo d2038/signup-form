@@ -8,13 +8,14 @@
   <title>Signup form</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <div class="left-side">
-    <img src="/resources/leaf.jpg">
+    <img class="background" src="/resources/leaf.jpg">
     <div class="logo-container">
-      <img src="/resources/odin-lined.png">
+      <img class="logo-image" src="/resources/odin-lined.png">
       <div class="logo-title">ODIN</div>
     </div>
     <div class="credits">Photo by <a
@@ -53,11 +54,11 @@
             
             <div>
               <label for="phoneNumber">PHONE NUMBER</label>
-              <input type="text" id="phoneNumber">
+              <input type="tel" id="phoneNumber">
             </div>
           </div>
           
-          <div class="password-info">
+          <div class="password-info error">
             <div>
               <label for="password">PASSWORD</label>
               <input type="password" id="password">
