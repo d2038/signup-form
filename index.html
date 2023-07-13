@@ -32,44 +32,44 @@
     </div>
 
     <div class="form-container">
-      <h2 class="form-title">Let's do this!</h1>
-        <form action="#" id="signup-form" method="post">
-          <div class="fullname">
-            <div>
-              <label for="firstName">FIRST NAME</label>
-              <input type="text" id="firstName">
-            </div>
+      <h2 class="form-title">Let's do this!</h2>
+      <form action="https://d2038.github.io/signup-form/" id="signup-form" method="get">
+        <div class="fullname">
+          <div>
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" required>
+          </div>
 
-            <div>
-              <label for="lastName">LAST NAME</label>
-              <input type="text" id="lastName">
-            </div>
+          <div>
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" required>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" required>
           </div>
           
-          <div class="contact-info">
-            <div>
-              <label for="email">EMAIL</label>
-              <input type="email" id="email">
-            </div>
-            
-            <div>
-              <label for="phoneNumber">PHONE NUMBER</label>
-              <input type="tel" id="phoneNumber">
-            </div>
+          <div>
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="tel" id="phoneNumber" required>
+          </div>
+        </div>
+        
+        <div class="password-info">
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" required>
           </div>
           
-          <div class="password-info error">
-            <div>
-              <label for="password">PASSWORD</label>
-              <input type="password" id="password">
-            </div>
-            
-            <div>
-              <label for="confirmPassword">CONFIRM PASSWORD</label>
-              <input type="password" id="confirmPassword">
-            </div>
+          <div>
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPassword" required>
           </div>
-        </form>
+        </div>
+      </form>
     </div>
 
     <div class="account-container">

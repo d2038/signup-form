@@ -128,14 +128,24 @@ input:focus {
   box-shadow: 3px 3px 2px #b0b2b8;
 }
 
-.error input {
+.error, .error:focus {
   border-color: red;
 }
 
-.error>div:first-child:after {
+div.error {
+  position: relative;
+}
+
+div.error::after {
+  position: absolute;
+  top: 4.5vw;
   content: "* Passwords do not match";
   color: red;
-  font-size: max(9px,1.3vw);;  
+  font-size: max(9px,1.3vw);  
+}
+
+.match, .match:focus {
+  border-color: green;
 }
 
 .form-title {
